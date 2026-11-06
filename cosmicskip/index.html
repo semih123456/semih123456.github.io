@@ -1,0 +1,258 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cosmic Skip Gizlilik Politikası</title>
+<meta name="description" content="Cosmic Skip mobil oyununun gizlilik politikası / Privacy policy of the Cosmic Skip mobile game.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>body{margin:0}</style>
+</head><body>
+<style>
+  /* Layout: tek okuma sütunu; üstte oyun başlığı ve dil geçişi, bölümler ince çizgilerle ayrılır, tablolar kendi kaydırma kutusunda. */
+  :root {
+    --bg: #f7f6fb;
+    --surface: #ffffff;
+    --fg: #1b1a2e;
+    --muted: #5d5b75;
+    --line: #dcd9ea;
+    --accent: #4a3fb8;      /* bulutsu moru */
+    --flame: #e2672a;       /* roket alevi */
+    --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --font-body: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12111f; --surface: #1b1a2d; --fg: #ecebf6; --muted: #a9a6c4; --line: #2e2c47;
+      --accent: #a99cff; --flame: #ff9a5c; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12111f; --surface: #1b1a2d; --fg: #ecebf6; --muted: #a9a6c4; --line: #2e2c47;
+    --accent: #a99cff; --flame: #ff9a5c; color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding-block: 2.5rem 4rem;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  header { display: grid; gap: 0.75rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
+  .game {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--flame);
+  }
+  h1, h2 { font-family: var(--font-display); text-wrap: balance; line-height: 1.2; }
+  h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); margin: 0; font-weight: 700; }
+  h2 { font-size: 1.3rem; margin: 0; font-weight: 600; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; font-variant-numeric: tabular-nums; }
+  .lang { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.25rem; }
+  .lang a {
+    padding: 0.3rem 0.8rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  .lang a:hover { border-color: var(--accent); color: var(--accent); }
+  .lead { font-size: 1.08rem; margin: 1.5rem 0 0; }
+
+  article { display: grid; gap: 2.25rem; margin-top: 2.25rem; }
+  article + article { border-top: 1px solid var(--line); padding-top: 2.5rem; margin-top: 3rem; }
+  section { display: grid; gap: 0.75rem; }
+  section p, section ul { margin: 0; }
+  ul { padding-left: 1.2rem; display: grid; gap: 0.35rem; }
+  a { color: var(--accent); text-underline-offset: 0.15em; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+  strong { font-weight: 600; }
+
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: 0.93rem; }
+  th, td { text-align: left; vertical-align: top; padding: 0.7rem 0.9rem; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; color: var(--muted); font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; }
+  tr:last-child td { border-bottom: 0; }
+
+  .contact {
+    display: grid; gap: 0.35rem;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.1rem;
+  }
+  .contact .addr { font-weight: 600; user-select: all; overflow-wrap: anywhere; }
+  footer { margin-top: 3rem; color: var(--muted); font-size: 0.85rem; }
+</style>
+
+<div class="page">
+  <header>
+    <span class="game">Cosmic Skip</span>
+    <h1>Gizlilik Politikası</h1>
+    <p class="meta">Yürürlük tarihi: 17 Ekim 2026 · Son güncelleme: 6 Kasım 2026 · Geliştirici: Semih Demirhan</p>
+    <nav class="lang" aria-label="Dil / Language">
+      <a href="#tr">Türkçe</a>
+      <a href="#en">English</a>
+    </nav>
+  </header>
+
+  <article id="tr" lang="tr">
+    <p class="lead">Cosmic Skip hesap açtırmaz ve sizden ad, e-posta ya da konum gibi kişisel bilgi istemez. Oyun ilerlemeniz yalnızca cihazınızda saklanır. Uygulama içi reklamlar ve çökme raporları için cihaz verileri, aşağıda adı geçen hizmet sağlayıcılarla paylaşılabilir.</p>
+
+    <section>
+      <h2>Toplanan veriler</h2>
+      <p>Geliştirici olarak kendi sunucumuzda hiçbir veri toplamıyor ve saklamıyoruz. Aşağıdaki veriler ya cihazınızda kalır ya da doğrudan ilgili hizmet sağlayıcıya gider.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Veri</th><th>Ne için</th><th>Nerede / kime</th></tr></thead>
+          <tbody>
+            <tr><td>Oyun ilerlemesi: para, geliştirme seviyeleri, ulaşılan gezegen, ayarlar, günlük görev durumu</td><td>Oyunu kaldığınız yerden sürdürmek</td><td>Yalnızca cihazınızda; kimseye gönderilmez</td></tr>
+            <tr><td>Reklam kimliği (Android Advertising ID), IP adresi, cihaz modeli, işletim sistemi sürümü, dil, yaklaşık ülke, reklam etkileşimleri</td><td>Reklam göstermek, reklamın izlendiğini ölçmek, sahte tıklamayı önlemek</td><td>Unity LevelPlay ve aracılık ettiği reklam ağları</td></tr>
+            <tr><td>Çökme ve hata bilgisi: cihaz modeli, işletim sistemi sürümü, hata kaydı</td><td>Oyundaki hataları bulup düzeltmek</td><td>Unity (oyun motoru tanılama verisi)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Oyun adınızı, e-posta adresinizi, telefon numaranızı, rehberinizi, fotoğraflarınızı ya da hassas konumunuzu toplamaz. Uygulama içi satın alma yoktur.</p>
+    </section>
+
+    <section>
+      <h2>Reklamlar</h2>
+      <p>Cosmic Skip ücretsizdir ve banner, geçiş ve ödüllü reklamlar gösterir. Reklamlar Unity LevelPlay aracılığıyla Unity Ads ve ironSource Ads ağlarından sunulur; LevelPlay, reklamı gösterecek ağı seçmek için yukarıdaki cihaz verilerini kullanır.</p>
+      <ul>
+        <li>Oyun ilk açıldığında "Reklamlar ve gizlilik" penceresi çıkar. Siz <strong>Kabul et</strong> ya da <strong>Reddet</strong> seçmeden reklam hizmeti başlatılmaz. Seçiminizi istediğiniz zaman Ayarlar → Reklam Gizliliği'nden değiştirebilirsiniz. Reddederseniz reklamlar kişiselleştirilmez.</li>
+        <li>Banner yalnızca ana ekranda ve uçuş sonucu ekranında görünür. Geçiş reklamı yalnızca bazı uçuşların sonuç ekranından çıkarken gösterilir; oyun açılırken ve uçuş sırasında reklam gösterilmez.</li>
+        <li>Ödüllü reklamlar her zaman isteğe bağlıdır ve butonlarında "REKLAM" yazar (yakıt ikmali, parçalanınca devam, 2x kazanç); izlemezseniz oyun devam eder.</li>
+        <li>Reklam kimliğinizi sıfırlayabilir ya da kişiselleştirilmiş reklamları kapatabilirsiniz: Android Ayarlar → Gizlilik → Reklamlar (menü adı cihaza göre değişir). Bu durumda reklamlar gösterilmeye devam eder ama ilgi alanınıza göre seçilmez.</li>
+        <li>Avrupa Ekonomik Alanı, Birleşik Krallık ve izin gerektiren diğer bölgelerde kişiselleştirilmiş reklam için onayınız istenir; onay vermezseniz yalnızca kişiselleştirilmemiş reklam görürsünüz.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Üçüncü taraf hizmetler</h2>
+      <p>Bu hizmetler verileri kendi gizlilik politikalarına göre işler; verilerinizi bunların dışında kimseye satmayız ya da paylaşmayız.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Hizmet</th><th>Rolü</th><th>Gizlilik politikası</th></tr></thead>
+          <tbody>
+            <tr><td>Unity (oyun motoru, Unity LevelPlay reklam aracılığı)</td><td>Oyunun çalışması, çökme raporları, reklam sunumu</td><td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Game Player and App User Privacy Policy</a></td></tr>
+            <tr><td>LevelPlay'in aracılık ettiği reklam ağları</td><td>Reklamın kendisini göstermek</td><td>Her ağın kendi politikası; reklamın üzerindeki bilgi simgesinden ulaşılabilir</td></tr>
+            <tr><td>Google Play</td><td>Uygulamanın indirilmesi ve güncellenmesi</td><td><a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Çocuklar</h2>
+      <p>Cosmic Skip 13 yaş altındaki çocuklara yönelik değildir ve bu yaş grubundan bilerek veri toplamaz. 13 yaşından küçük bir çocuğun verisinin işlendiğini düşünüyorsanız bize yazın; ilgili hizmet sağlayıcıdan silinmesini isteriz.</p>
+    </section>
+
+    <section>
+      <h2>Saklama ve silme</h2>
+      <p>Oyun ilerlemeniz, uygulamayı silene kadar cihazınızda kalır.</p>
+      <ul>
+        <li><strong>İlerlemeyi silmek:</strong> Android Ayarlar → Uygulamalar → Cosmic Skip → Depolama → Verileri temizle; ya da uygulamayı kaldırın. Silinen ilerleme geri getirilemez, çünkü bir kopyasını tutmayız.</li>
+        <li><strong>Reklam ve çökme verileri:</strong> Unity ve reklam ağları bu verileri kendi politikalarındaki süreler boyunca saklar. Reklam kimliğinizi sıfırlamak, önceki kimlikle ilişkili verilerin yeni kimliğinizle eşleşmesini engeller.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Haklarınız</h2>
+      <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Avrupa Birliği Genel Veri Koruma Tüzüğü (GDPR) kapsamında şu haklara sahipsiniz:</p>
+      <ul>
+        <li>Hakkınızda veri işlenip işlenmediğini öğrenmek ve bir kopyasını istemek</li>
+        <li>Yanlış verinin düzeltilmesini ya da silinmesini istemek</li>
+        <li>Kişiselleştirilmiş reklama verdiğiniz onayı geri almak ve işlemeye itiraz etmek</li>
+        <li>Bulunduğunuz ülkedeki veri koruma otoritesine şikayette bulunmak (Türkiye'de Kişisel Verileri Koruma Kurumu)</li>
+      </ul>
+      <p>Kendi sunucumuzda veri tutmadığımız için reklam ve çökme verilerine dair taleplerinizi ilgili hizmet sağlayıcıya iletir, size yardımcı oluruz. Talepleri 30 gün içinde yanıtlarız.</p>
+    </section>
+
+    <section>
+      <h2>Değişiklikler ve iletişim</h2>
+      <p>Bu politikayı değiştirirsek güncel sürümü bu sayfada yayımlar, en üstteki tarihi güncelleriz. Önemli değişiklikleri oyun içinde de duyururuz.</p>
+      <div class="contact">
+        <span>Geliştirici: Semih Demirhan</span>
+        <span>E-posta: <a class="addr" href="mailto:demirhansemi@gmail.com">demirhansemi@gmail.com</a></span>
+      </div>
+    </section>
+  </article>
+
+  <article id="en" lang="en">
+    <h2 style="font-size:1.6rem">Privacy Policy (English)</h2>
+    <p class="lead" style="margin:0">Cosmic Skip does not require an account and never asks for your name, email or location. Your game progress stays on your device. Device data is shared with the service providers below only to show ads and report crashes.</p>
+
+    <section>
+      <h2>Data we handle</h2>
+      <p>We run no servers and collect nothing ourselves.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Data</th><th>Purpose</th><th>Where / who</th></tr></thead>
+          <tbody>
+            <tr><td>Game progress: coins, upgrade levels, planets reached, settings, daily quest state</td><td>Let you continue where you left off</td><td>Only on your device; never sent anywhere</td></tr>
+            <tr><td>Android Advertising ID, IP address, device model, OS version, language, approximate country, ad interactions</td><td>Serve and measure ads, prevent fraud</td><td>Unity LevelPlay and the ad networks it mediates</td></tr>
+            <tr><td>Crash and error reports: device model, OS version, error log</td><td>Find and fix bugs</td><td>Unity (engine diagnostics)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>We do not collect your name, email, phone number, contacts, photos or precise location. There are no in-app purchases.</p>
+    </section>
+
+    <section>
+      <h2>Ads</h2>
+      <ul>
+        <li>The game is free and shows banner, interstitial and rewarded ads, served through Unity LevelPlay from the Unity Ads and ironSource Ads networks.</li>
+        <li>On first launch an "Ads and privacy" window asks you to <strong>Accept</strong> or <strong>Decline</strong>; the ad service does not start until you choose. You can change your choice anytime in Settings → Ad Privacy. If you decline, ads are not personalized.</li>
+        <li>Banners appear only on the main screen and the flight results screen. Interstitials appear only when leaving the results screen after some flights; there are no ads at launch or during a flight. Rewarded ads are always optional and labelled "AD".</li>
+        <li>You can reset your Advertising ID or opt out of personalized ads in Android Settings → Privacy → Ads (menu names vary by device).</li>
+        <li>In the EEA, the UK and other regions that require it, personalized ads are shown only with your consent.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Third parties</h2>
+      <p>These providers process data under their own policies. We do not sell your data.</p>
+      <ul>
+        <li>Unity (engine, crash reports, LevelPlay ad mediation): <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Game Player and App User Privacy Policy</a></li>
+        <li>Ad networks mediated by LevelPlay: each network's own policy, linked from the info icon on its ads</li>
+        <li>Google Play (download and updates): <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Children</h2>
+      <p>Cosmic Skip is not directed at children under 13 and does not knowingly collect their data. If you believe a child's data was processed, contact us and we will ask the provider to delete it.</p>
+    </section>
+
+    <section>
+      <h2>Retention and deletion</h2>
+      <p>Progress stays on your device until you clear the app's data (Settings → Apps → Cosmic Skip → Storage → Clear data) or uninstall it. We hold no copy, so it cannot be restored. Ad and crash data are kept by the providers under their own policies.</p>
+    </section>
+
+    <section>
+      <h2>Your rights</h2>
+      <p>Under Turkey's KVKK (Law No. 6698) and the EU GDPR you may ask what data is processed and get a copy, ask for correction or deletion, withdraw consent to personalized ads, object to processing, and complain to your data protection authority. We forward requests about ad and crash data to the relevant provider and reply within 30 days.</p>
+    </section>
+
+    <section>
+      <h2>Changes and contact</h2>
+      <p>We post updates on this page and change the date at the top.</p>
+      <div class="contact">
+        <span>Developer: Semih Demirhan</span>
+        <span>Email: <a class="addr" href="mailto:demirhansemi@gmail.com">demirhansemi@gmail.com</a></span>
+      </div>
+    </section>
+  </article>
+
+  <footer>Cosmic Skip · Gizlilik Politikası / Privacy Policy · 06.11.2026</footer>
+</div>
+
+</body></html>
