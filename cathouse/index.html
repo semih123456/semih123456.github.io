@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cat House Gizlilik Politikası</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+  /* Layout: one quiet reading column, in the game's own rounded headline face and lilac tones. */
+  :root {
+    --bg: #fbf8ff; --fg: #2f2438; --muted: #65586f; --line: #dcd2ea; --accent: #6b46b8; --tint: #efe8fb;
+    --display: "Baloo 2", "Trebuchet MS", sans-serif;
+    --body: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #1d1724; --fg: #efe9f5; --muted: #b3a7bf; --line: #40354c; --accent: #c3a8f5; --tint: #2a2233; color-scheme: dark }
+  }
+  :root[data-theme="dark"] { --bg: #1d1724; --fg: #efe9f5; --muted: #b3a7bf; --line: #40354c; --accent: #c3a8f5; --tint: #2a2233; color-scheme: dark }
+  body {
+    background: var(--bg); color: var(--fg); font: 400 1.05rem/1.65 var(--body);
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 40px 64px;
+  }
+  main { max-width: 42rem; margin: 0 auto; display: grid; gap: 2rem; }
+  section { display: grid; gap: .6rem; min-width: 0; }
+  h1, h2 { font-family: var(--display); font-weight: 600; line-height: 1.2; text-wrap: balance; margin: 0; }
+  h1 { font-size: clamp(2rem, 7vw, 2.75rem); color: var(--accent); }
+  h2 { font-size: 1.35rem; }
+  p, ul { margin: 0; }
+  ul { padding-left: 1.25rem; display: grid; gap: .35rem; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  header { display: grid; gap: .4rem; }
+  .date { color: var(--muted); }
+  .summary { background: var(--tint); padding: 1rem 1.15rem; border-radius: 12px; }
+  .contact { font-weight: 600; overflow-wrap: anywhere; }
+  hr { border: 0; border-top: 1px solid var(--line); width: 100%; margin: 0; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Cat House Gizlilik Politikası</h1>
+    <p class="date">Son güncelleme: 7 Kasım 2026</p>
+  </header>
+
+  <p class="summary">Cat House hesap açtırmaz ve senden ad, e-posta ya da konum istemez. Oyun kaydın telefonunda kalır. Oyun reklamlarla desteklenir; reklamları Unity LevelPlay üzerinden Unity Ads ve ironSource Ads gösterir ve bunun için cihaz verilerini işler.</p>
+
+  <section>
+    <h2>Bu politika neyi kapsar?</h2>
+    <p>Bu politika, Android için yayımlanan Cat House mobil oyununu kapsar. Oyunda hangi verilerin işlendiğini, neden işlendiğini ve bu konudaki seçeneklerini açıklar.</p>
+  </section>
+
+  <section>
+    <h2>Cihazında saklanan oyun verileri</h2>
+    <p>Pati paran, ev seviyen, kedilerin, eşyaların, albümün, görevlerin ve ses ayarın yalnızca telefonunda saklanır. Geliştirici bu verileri toplamaz ve görmez. Kedilerine verdiğin isimler de cihazında kalır.</p>
+  </section>
+
+  <section>
+    <h2>Reklamlar</h2>
+    <p>Oyunda üç tür reklam olabilir:</p>
+    <ul>
+      <li><strong>Ödüllü reklam:</strong> Yalnızca sen istersen izlenir; örneğin mağazada paran yetmediğinde ürünü ücretsiz almak ya da sen yokken biriken parayı ikiye katlamak için. Bu düğmelerde her zaman "Reklam" yazar.</li>
+      <li><strong>Geçiş reklamı:</strong> Tam ekran reklam. Yalnızca mağaza, albüm, başarılar ya da bakım ekranını kapatıp odaya döndüğünde, birkaç dakikada en fazla bir kez gelebilir. Oyun açılırken ve ilk dakikalarda gösterilmez.</li>
+      <li><strong>Banner:</strong> Ekranın en altında küçük bir reklam şeridi. Oyunun düğmelerini kapatmaz.</li>
+    </ul>
+    <p>Reklamları Unity LevelPlay aracılık hizmeti (Unity Technologies ve ironSource) üzerinden <strong>Unity Ads</strong> ve <strong>ironSource Ads</strong> sunar. Reklam göstermek, performansını ölçmek ve kötüye kullanımı önlemek için bu şirketler şu verileri toplayabilir ve işleyebilir:</p>
+    <ul>
+      <li>Reklam kimliği gibi cihaz tanımlayıcıları</li>
+      <li>IP adresi ve buna dayalı yaklaşık konum</li>
+      <li>Cihaz modeli, işletim sistemi ve dil gibi teknik bilgiler</li>
+      <li>Reklamlarla etkileşimlerin ve hata kayıtları</li>
+    </ul>
+    <p>Bu veriler aktarım sırasında şifrelenir. Ayrıntılar için <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">Unity oyuncu gizlilik politikası</a> ve <a href="https://developers.is.com/ironsource-mobile/air/ironsource-mobile-privacy-policy/" target="_blank" rel="noopener">ironSource gizlilik politikası</a> sayfalarına bakabilirsin.</p>
+  </section>
+
+  <section>
+    <h2>Oyun motoru Unity</h2>
+    <p>Cat House, Unity oyun motoruyla yapılmıştır. Unity, uyumluluğu geliştirmek için cihaz modeli, işletim sistemi ve grafik birimi gibi teknik bilgileri toplayabilir. Ayrıntılar <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity Gizlilik Politikası</a> sayfasındadır.</p>
+  </section>
+
+  <section>
+    <h2>Reklam izni ve seçeneklerin</h2>
+    <ul>
+      <li>Oyun ilk açıldığında, herhangi bir reklam yüklenmeden önce <strong>Reklamlar ve gizlilik</strong> penceresini gösterir. <strong>Kabul Et</strong> dersen sana kişiselleştirilmiş reklamlar gösterilebilir; <strong>Reddet</strong> dersen yine reklam görürsün ama kişiselleştirilmemiş olur ve verilerinin satılmamasını isteriz.</li>
+      <li>Seçimini oyunun ana sayfasındaki <strong>Reklam İzin Seçenekleri</strong> düğmesiyle istediğin zaman değiştirebilirsin.</li>
+      <li>Reklam kimliğini Android'de <strong>Ayarlar &gt; Gizlilik &gt; Reklamlar</strong> yolundan sıfırlayabilir veya silebilirsin. Menü adları cihaza göre değişebilir.</li>
+      <li>Ödüllü reklam izlemek zorunlu değildir; oyunu onlar olmadan da oynayabilirsin.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Verilerini silme</h2>
+    <p>Oyunu kaldırdığında veya Android ayarlarından oyunun verilerini temizlediğinde oyun kaydın silinir. Geliştiricinin sunucusunda senden kalan bir kayıt yoktur. Reklam ortaklarının işlediği veriler için yukarıdaki Unity ve ironSource sayfalarındaki seçenekleri kullanabilir ya da bize yazabilirsin.</p>
+  </section>
+
+  <section>
+    <h2>Çocuklar</h2>
+    <p>Cat House 13 yaşın altındaki çocuklara yönelik değildir. Geliştirici bu yaş grubundan bilerek kişisel veri toplamaz. Bir çocuğun veri paylaştığını düşünüyorsan aşağıdaki adresten bize ulaş.</p>
+  </section>
+
+  <section>
+    <h2>Değişiklikler</h2>
+    <p>Bu politika değişirse güncel metin bu sayfada yayımlanır ve üstteki tarih yenilenir.</p>
+  </section>
+
+  <section>
+    <h2>İletişim</h2>
+    <p>Gizlilikle ilgili soruların ve talepler için: <span class="contact">demirhansemi@gmail.com</span></p>
+  </section>
+
+  <hr>
+
+  <section lang="en">
+    <h2>Privacy summary in English</h2>
+    <p>Cat House has no accounts and does not ask for your name, email or location. Your game progress stays on your device, and the developer does not collect it. Uninstalling the game or clearing its data deletes it.</p>
+    <p>The game is supported by ads: optional rewarded ads, interstitials shown only after closing a menu (at most once every few minutes, never at launch) and a small banner at the bottom. Ads are served through Unity LevelPlay by Unity Ads and ironSource Ads, which may collect and process device identifiers such as the advertising ID, IP address and approximate location derived from it, technical device information, ad interactions and diagnostics. This data is encrypted in transit. See the <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">Unity player privacy policy</a> and the <a href="https://developers.is.com/ironsource-mobile/air/ironsource-mobile-privacy-policy/" target="_blank" rel="noopener">ironSource privacy policy</a>. The Unity game engine may also collect technical device information to improve compatibility; see the <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity Privacy Policy</a>.</p>
+    <p>Before any ad loads, the game asks you to accept or refuse personalised ads, and you can change your choice with the <strong>Reklam İzin Seçenekleri</strong> button on the home screen. The game is not directed at children under 13. Contact: <span class="contact">demirhansemi@gmail.com</span></p>
+  </section>
+</main>
+</body>
+</html>
